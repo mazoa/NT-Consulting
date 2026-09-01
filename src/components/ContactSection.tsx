@@ -1,4 +1,4 @@
-import { EMAIL, LINKEDIN_URL, consultMailto } from "@/lib/site";
+import { EMAIL, LINKEDIN_URL, PAY_URL, consultMailto } from "@/lib/site";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
 
@@ -54,6 +54,25 @@ export function ContactSection() {
             className="inline-flex items-center justify-center rounded-lg border border-charcoal bg-white/80 px-6 py-3 text-sm font-medium text-charcoal hover:bg-white"
           >
             Contact Anatoly Mazo
+          </a>
+        </div>
+
+        <div
+          id="pay"
+          className="section-anchor card mt-10 p-6 md:p-8"
+        >
+          <h3 className="font-heading text-2xl font-semibold">Pay for an engagement</h3>
+          <p className="mt-3 max-w-2xl text-ink">
+            After the scope is agreed, pay the quoted amount here. You enter the
+            amount on Stripe&apos;s secure page. No prices are listed on this site.
+          </p>
+          <a
+            href={PAY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center justify-center rounded-lg bg-charcoal px-6 py-3 text-sm font-medium text-white hover:opacity-90"
+          >
+            Pay securely
           </a>
         </div>
 

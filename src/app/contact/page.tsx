@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/Container";
-import { EMAIL, LINKEDIN_URL, consultMailto } from "@/lib/site";
+import { EMAIL, LINKEDIN_URL, PAY_URL, consultMailto } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -52,6 +52,14 @@ export default function ContactPage() {
               className="mt-8 inline-flex items-center rounded-lg bg-charcoal px-5 py-3 text-sm font-medium text-white hover:opacity-90"
             >
               Schedule a Consultation
+            </a>
+            <a
+              href={PAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 ml-3 inline-flex items-center rounded-lg border border-charcoal px-5 py-3 text-sm font-medium text-charcoal hover:bg-white"
+            >
+              Pay securely
             </a>
             <p className="mt-8 max-w-sm text-sm text-muted">
               Independent consultant. Not legal advice. Not affiliated with or

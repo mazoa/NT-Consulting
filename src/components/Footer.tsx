@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EMAIL, LINKEDIN_URL, NAV_LINKS, SITE_NAME, consultMailto } from "@/lib/site";
+import { EMAIL, LINKEDIN_URL, NAV_LINKS, PAY_URL, SITE_NAME, consultMailto } from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -61,6 +61,16 @@ export function Footer() {
             <li>
               <a href={consultMailto} className="text-ink hover:underline">
                 Schedule a Consultation
+              </a>
+            </li>
+            <li>
+              <a
+                href={PAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink hover:underline"
+              >
+                Pay
               </a>
             </li>
           </ul>
