@@ -20,7 +20,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alecmazo.github.io/anatoly-mazo-compliance"),
+  metadataBase: new URL("https://mazoa.github.io/NT-Consulting"),
   title: {
     default: SITE_TITLE,
     template: `%s · ${SITE_NAME}`,

@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repo = "anatoly-mazo-compliance";
+const repo = "NT-Consulting";
 const githubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {
