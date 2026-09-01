@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-raleway), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --color-band: #ececf3;
+  --color-charcoal: #1b1b27;
+  --color-ink: #38383c;
+  --color-muted: #6b6b73;
+  --color-line: #d8d8e2;
+  --color-card: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html,
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  color: var(--color-charcoal);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-charcoal);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-band);
+  color: var(--color-charcoal);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 100;
+  background: var(--color-charcoal);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.35rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.section-anchor {
+  scroll-margin-top: 5.75rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(27, 27, 39, 0.1);
+  border-radius: 0.85rem;
+}
+
+.prose-site p + p {
+  margin-top: 1rem;
+}
