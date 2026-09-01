@@ -12,7 +12,7 @@ export const SITE_TITLE =
 export const SITE_DESCRIPTION =
   "Senior-level compliance consulting forged at Wells Fargo. Boutique, executive-level advisory for private funds, wealth managers, family offices, and high-growth investment companies.";
 
-export const PAY_URL = "https://buy.stripe.com/test_14A28qdD68LVeVt17X9bO00";
+export const PAY_URL = "https://buy.stripe.com/aFadR91w7d3t4YoeJZ7EQ01";
 export const consultMailto = `mailto:${EMAIL}?subject=${encodeURIComponent(CONSULT_SUBJECT)}`;
 
 export const SECTOR_OPTIONS = [
