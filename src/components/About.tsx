@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 export function About() {
@@ -25,7 +26,7 @@ export function About() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-line">
           <Image
-            src="/hero.png"
+            src={asset("/hero.png")}
             alt="Executives in a conference room reviewing a growth chart during a professional meeting."
             fill
             className="object-cover"

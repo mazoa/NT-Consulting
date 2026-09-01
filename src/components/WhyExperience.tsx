@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 const POINTS = [
@@ -49,7 +50,7 @@ export function WhyExperience() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-line">
             <Image
-              src="/img3.png"
+              src={asset("/img3.png")}
               alt="Professionals gathered around a glass conference table in a high-rise boardroom."
               fill
               className="object-cover"

@@ -1,3 +1,8 @@
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+export function asset(path: string) {
+  return `${BASE_PATH}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export const EMAIL = "anatolymazo@gmail.com";
 export const CONSULT_SUBJECT = "Compliance consultation request";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/anatoly-mazo-9949a85";

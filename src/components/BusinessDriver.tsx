@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 const POINTS = [
@@ -36,7 +37,7 @@ export function BusinessDriver() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-line">
           <Image
-            src="/img5.png"
+            src={asset("/img5.png")}
             alt="A modern institutional office with workstations and a wall of market data screens."
             fill
             className="object-cover"

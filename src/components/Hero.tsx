@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { consultMailto } from "@/lib/site";
+import { consultMailto, asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 export function Hero() {
@@ -10,7 +10,7 @@ export function Hero() {
       aria-labelledby="hero-heading"
     >
       <Image
-        src="/img1.png"
+        src={asset("/img1.png")}
         alt=""
         fill
         priority

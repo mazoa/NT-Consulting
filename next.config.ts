@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   },
   basePath: githubPages ? `/${repo}` : "",
   assetPrefix: githubPages ? `/${repo}` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: githubPages ? `/${repo}` : "",
+  },
 };
 
 export default nextConfig;

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 const CARDS = [
@@ -23,7 +24,7 @@ export function StrategicPartner() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative order-2 aspect-[16/10] overflow-hidden rounded-xl border border-line lg:order-1">
             <Image
-              src="/img4.png"
+              src={asset("/img4.png")}
               alt="Two professionals in a one-on-one consultation at a conference table overlooking a city skyline."
               fill
               className="object-cover"

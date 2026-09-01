@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 const ITEMS = [
@@ -27,7 +28,7 @@ export function Expertise() {
         <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-xl border border-line bg-white">
             <Image
-              src="/img6.png"
+              src={asset("/img6.png")}
               alt="Metallic shield on a pale studio background, a visual metaphor for institutional protection."
               fill
               className="object-cover"

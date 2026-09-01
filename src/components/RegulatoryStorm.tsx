@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/site";
 import { Container } from "@/components/Container";
 
 const CARDS = [
@@ -38,7 +39,7 @@ export function RegulatoryStorm() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-line lg:aspect-[5/4]">
             <Image
-              src="/img2.png"
+              src={asset("/img2.png")}
               alt="Storm clouds gathering over a dense urban skyline of office towers."
               fill
               className="object-cover"
